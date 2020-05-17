@@ -8,6 +8,10 @@ const pathDirectory = path.join(__dirname, '../public');
 
 app.use(express.static(pathDirectory));
 
+app.get('', (req, res) => {
+  res.send();
+});
+
 app.listen(port, () => {
   console.log('server up!');
 })
